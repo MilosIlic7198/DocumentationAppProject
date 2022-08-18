@@ -1,0 +1,25 @@
+{{#if register_Page }}
+<section id="section">
+<h3 class="title">Register Page</h3>
+<form class="authForm" action="/register" method="post">
+<div class="authInfo">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="Enter username!" required>
+</div>
+<div class="authInfo">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Enter password!" required>
+</div>
+<p class="links">You are already a member? 
+<a href="/login">login</a> or go to 
+<a href="/">front page?</a>
+</p>
+<div class="authButtonDiv">
+<button class="aButton" type="sumbit">Register</button>
+</div>
+</form>
+<div class="cr">
+<span>Copyright &copy; Miloš Ilić 2022</span>
+</div>
+</section>
+{{/if}}

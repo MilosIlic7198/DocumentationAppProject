@@ -1,0 +1,178 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #3399ff;
+}
+
+.container {
+  padding: 5px;
+  margin: 5px;
+}
+
+ul.mynav {
+  margin: 5px;
+  padding: 5px;
+  list-style: none;
+}
+
+ul.mynav li {
+  display: inline;
+}
+
+ul.mynav li + li:before {
+  content: "/\00a0";
+}
+
+ul.mynav li a {
+  text-decoration: none;
+}
+
+ul.mynav li a.active {
+  text-decoration: underline;
+}
+
+ul.mynav li a:hover {
+  text-decoration: underline;
+}
+
+#section {
+  background-color: #d7ebf4;
+  height: 50%;
+  width: 50%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 1px;
+  border-style: solid;
+}
+
+.authInfo {
+  padding: 5px;
+  text-align: center;
+}
+
+.links {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.authButtonDiv {
+  padding-top: 2%;
+  text-align: center;
+}
+
+.aButton {
+  width: 100px;
+  padding-left: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-right: 2%;
+}
+
+#frontPage {
+  background-color: #d7ebf4;
+  height: 25%;
+  width: 35%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 1px;
+  border-style: solid;
+}
+
+.title {
+  text-align: center;
+}
+
+.releaseInfo {
+  margin: 5px;
+}
+
+.rLabel::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.releaseButton {
+  margin: 5px;
+}
+
+.rButton {
+  width: 100px;
+}
+
+#bars-container {
+  margin: 5px;
+  width: 50%;
+  height: 20px;
+  background-color: #79a6d2;
+  position: relative;
+  border: 1px;
+  border-style: solid;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 100%;
+  background-color: #004080;
+}
+
+#play-animation {
+  animation: progress-animation 3s forwards;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.dDiv {
+  background-color: #79a6d2;
+  margin-bottom: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-left: 5px solid;
+  border-color: #004080;
+}
+
+.dDocs {
+  padding-left: 5px;
+}
+
+.dDocs a {
+  text-decoration: none;
+}
+
+.dDocs a:hover {
+  text-decoration: underline;
+}
+.cr {
+  position: absolute;
+  bottom: 0px;
+  padding: 5px;
+  margin: 5px;
+}

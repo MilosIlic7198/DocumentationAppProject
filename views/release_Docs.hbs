@@ -1,0 +1,31 @@
+{{#if release_Docs_Page }}
+<section id="section">
+<ul class="mynav">
+<li><a href="/release" class="active">Release Docs</a></li>
+<li><a href="/remove">Remove Docs</a></li>
+<li><a href="/logout" class="logout">Logout</a></li>
+</ul>
+<div class="container">
+<h3 class="title">Release docs!</h3>
+<form>
+<div class="releaseInfo">
+<label class="rLabel" for="upload">Upload Document:</label>
+<input type="file" id="upload">
+</div>
+<div class="releaseInfo">
+<label class="rLabel" for="description">Description:</label>
+<textarea type="text" id="description" rows="5" cols="50"></textarea>
+</div>
+<div id="bars-container">
+<div class="progress-bar"></div>
+</div>
+<div class="releaseButton">
+<button id="uploadButton" class="rButton">Upload</button>
+</div>
+</form>
+</div>
+<div class="cr">
+<span>Copyright &copy; Miloš Ilić 2022</span>
+</div>
+</section>
+{{/if}}

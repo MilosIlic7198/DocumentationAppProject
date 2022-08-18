@@ -1,0 +1,25 @@
+{{#if login_Page }}
+<section id="section">
+<h3 class="title">Login Page</h3>
+<form class="authForm" action="/login" method="post">
+<div class="authInfo">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="Enter username!" required>
+</div>
+<div class="authInfo">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Enter password!" required>
+</div>
+<p class="links">You are not a member? 
+<a href="/register">register</a> or go to 
+<a href="/">front page?</a>
+</p>
+<div class="authButtonDiv">
+<button class="aButton" type="sumbit">Login</button>
+</div>
+</form>
+<div class="cr">
+<span>Copyright &copy; Miloš Ilić 2022</span>
+</div>
+</section>
+{{/if}}

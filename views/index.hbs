@@ -1,0 +1,61 @@
+{{#if front_Page }}
+<section id="frontPage">
+<div class="container">
+<h2 class="title">{ Welcome to documentationApp }</h2>
+<p class="links">
+<a type="button" href="/login">Release docs?</a> or
+<a type="button" href="/docs">Download docs?</a>
+</p>
+</div>
+<div class="cr">
+<span>Copyright &copy; Miloš Ilić 2022</span>
+</div>
+</section>
+{{/if}}
+
+{{#if docs_Page }}
+<section id="section">
+<ul class="mynav">
+<li><a href="/docs" class="active">Docs</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/" class="frontPage">Front Page?</a></li>
+</ul>
+<div class="container">
+<h3 class="title">Docs</h3>
+{{#if files.length}}
+{{#each files}}
+<div class="dDiv" data-id="{{this.docs_id}}">
+<p class="dDocs">Document: <a>{{this.name}}</a></p>
+<p class="dDocs">Description: {{this.description}}</p>
+</div>
+{{/each}}
+{{else}}
+<div>
+<p>No documents!</p>
+</div>
+{{/if}}
+</div>
+<div class="cr">
+<span>Copyright &copy; Miloš Ilić 2022</span>
+</div>
+</section>
+{{/if}}
+
+{{#if about_Page }}
+<section id="section">
+<ul class="mynav">
+<li><a href="/docs">Docs</a></li>
+<li><a href="/about" class="active">About</a></li>
+<li><a href="/" class="frontPage">Front Page?</a></li>
+</ul>
+<div class="container">
+<h3 class="title">About</h3>
+<div>
+<p>About Page</p>
+</div>
+</div>
+<div class="cr">
+<span>Copyright &copy; Miloš Ilić 2022</span>
+</div>
+</section>
+{{/if}}
